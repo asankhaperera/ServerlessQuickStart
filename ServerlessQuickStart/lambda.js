@@ -9,6 +9,8 @@ exports.handler = function(event, context, callback) {
         "result": result 
     }; 
 
+    console.log('Request : ' + firstNumber + ' + ' + secondNumber + ' and Result = ' + result);
+
     var response = { 
         "statusCode": 200, 
         "body": JSON.stringify(responseBody), 
